@@ -14,6 +14,7 @@ This project provides a Python application that extracts code quality details fr
 To run this application, you need the following:
 1. **SonarQube Server:** The application connects to a SonarQube server using the API.
 2. **Docker:** Ensure Docker is installed on the host machine to run the application as a container.
+3. **SonarQube User Token with access to the all the projects:** You need to have a SonarQube user token which has access to the all the projects of your sonar environment. Better if it is a admin user token.
 
 ## Setup and Installation
 
