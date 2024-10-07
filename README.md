@@ -22,7 +22,7 @@ To run this application, you need the following:
 ```bash
 git clone https://github.com/your-repo/sonar-report-generator.git
 cd sonar-report-generator
-
+```
 ### Step 2: Environment Variables
 
 SONARQUBE_URL: The URL of your SonarQube server (e.g., http://your-sonarqube-server:9000).
