@@ -24,17 +24,17 @@ git clone https://github.com/your-repo/sonar-report-generator.git
 cd sonar-report-generator
 ```
 ### Step 2: Environment Variables
-
+```bash
 SONARQUBE_URL: The URL of your SonarQube server (e.g., http://your-sonarqube-server:9000).
 SONARQUBE_TOKEN: The SonarQube API token to authenticate requests.
 APP_NAME: The application name that will be used in the report (default: TEST PROJECT).
-
+```
 ### Step 3: Build the Docker Image
 
 Use the following command to build the Docker image:
 ```bash
 docker build -t sonar-report-generator .
-
+```
 ### Step 4: Running the Application
 
 After the image is built, run the application using the following Docker command:
@@ -44,12 +44,13 @@ docker run -e SONARQUBE_URL='http://your-sonarqube-server:9000' \
            -e APP_NAME='TEST PROJECT' \
            -v /path/to/local/reports:/opt/sonar/reports \
            sonar-report-generator
-
+```
+```bash
 -e SONARQUBE_URL: URL of the SonarQube instance.
 -e SONARQUBE_TOKEN: Token for authenticating with SonarQube.
 -e APP_NAME: Optional application name that will be used in the report title.
 -v /path/to/local/reports:/opt/sonar/reports: Mount a local directory to store the generated report.
-
+```
 ### Step 5: Output
 
 Once the container runs, the application will:
